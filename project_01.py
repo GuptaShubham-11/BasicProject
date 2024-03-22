@@ -2,10 +2,14 @@
 
 import random
 
-target=random.randint(1,100)
+target=random.randint(1,1000)
 
 while True:
-    userChoise=int(input("Guess The Number:"))
+    userChoise=input("Guess The Number OR Quit for type 'Q':")
+    if (userChoise=="Q"):
+        print("_____QUIT_____")
+        break
+    userChoise=int(userChoise)
     if(userChoise==target):
         print("You Are Winner Of The Game.")
         break
