@@ -2,7 +2,7 @@
 
 import random
 
-target=random.randint(1,1000)
+target=random.randint(1,100)
 
 while True:
     userChoise=input("Guess The Number OR Quit for type 'Q':")
